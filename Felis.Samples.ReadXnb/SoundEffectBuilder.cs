@@ -15,6 +15,15 @@ namespace Felis.Samples.ReadXnb
 
         protected override void SetFormat(byte[] values)
         {
+            // TODO
+            //
+            // XNB 仕様の説明に従って WAVEFORMATEX へデシリアライズさせているが、
+            // WAVEFORMATEXTENSIBLE 未対応なのかどうかが不明。
+            // WAVEFORMATEXTENSIBLE 未対応ならば、WAVEFORMATEX.cbSize は
+            // 常に 0 であり、拡張データの読み込みは不要であろうが、
+            // WAVEFORMATEXTENSIBLE 対応ならば拡張データの読み込みも必要であり、
+            // このロジックでは 'data' チャンクを正しく読み込めない事になる。
+
             var gcHandle = GCHandle.Alloc(values, GCHandleType.Pinned);
             var pointer = gcHandle.AddrOfPinnedObject();
 
