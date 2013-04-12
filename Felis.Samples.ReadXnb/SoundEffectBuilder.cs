@@ -21,8 +21,8 @@ namespace Felis.Samples.ReadXnb
             // WAVEFORMATEXTENSIBLE 未対応なのかどうかが不明。
             // WAVEFORMATEXTENSIBLE 未対応ならば、WAVEFORMATEX.cbSize は
             // 常に 0 であり、拡張データの読み込みは不要であろうが、
-            // WAVEFORMATEXTENSIBLE 対応ならば拡張データの読み込みも必要であり、
-            // このロジックでは 'data' チャンクを正しく読み込めない事になる。
+            // WAVEFORMATEXTENSIBLE 対応ならば拡張データのデシリアライズも必要であり、
+            // WaveFormat 構造体へのバイト列コピーが失敗するかもしれない。
 
             var gcHandle = GCHandle.Alloc(values, GCHandleType.Pinned);
             var pointer = gcHandle.AddrOfPinnedObject();
