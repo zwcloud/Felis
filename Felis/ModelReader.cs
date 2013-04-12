@@ -39,7 +39,7 @@ namespace Felis
 
         protected internal override object Read(ContentReader input)
         {
-            builder.Begin(input.DeviceContext);
+            builder.Begin();
 
             // Bone count
             var boneCount = input.ReadUInt32();

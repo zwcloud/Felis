@@ -33,7 +33,7 @@ namespace Felis
             addMethod.Invoke(list, new[] { value });
         }
 
-        protected internal override void Begin(object deviceContext) { }
+        protected internal override void Begin() { }
 
         protected internal override object End()
         {

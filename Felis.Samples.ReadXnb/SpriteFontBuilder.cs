@@ -58,7 +58,7 @@ namespace Felis.Samples.ReadXnb
             }
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new SpriteFont();
         }

@@ -29,7 +29,7 @@ namespace Felis
 
         protected internal override object Read(ContentReader input)
         {
-            builder.Begin(input.DeviceContext);
+            builder.Begin();
 
             // Vertex stride
             builder.SetVertexStride(input.ReadUInt32());

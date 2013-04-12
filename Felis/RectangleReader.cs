@@ -29,7 +29,7 @@ namespace Felis
 
         protected internal override object Read(ContentReader input)
         {
-            builder.Begin(input.DeviceContext);
+            builder.Begin();
             builder.SetValues(input.ReadInt32(), input.ReadInt32(), input.ReadInt32(), input.ReadInt32());
             return builder.End();
         }

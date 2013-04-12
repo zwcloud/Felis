@@ -18,7 +18,7 @@ namespace Felis.Samples.ReadXnb
             instance.Height = height;
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new Rectangle();
         }

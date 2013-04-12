@@ -20,7 +20,7 @@ namespace Felis.Samples.ReadXnb
             instance.Radius = value;
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new BoundingSphere();
         }

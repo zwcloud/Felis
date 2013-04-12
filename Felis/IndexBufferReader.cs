@@ -29,7 +29,7 @@ namespace Felis
         
         protected internal override object Read(ContentReader input)
         {
-            builder.Begin(input.DeviceContext);
+            builder.Begin();
 
             // Is 16 bit
             builder.SetIsSixteenBits(input.ReadBoolean());

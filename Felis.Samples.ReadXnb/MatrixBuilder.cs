@@ -37,7 +37,7 @@ namespace Felis.Samples.ReadXnb
             instance.M44 = m44;
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new Matrix();
         }

@@ -229,7 +229,7 @@ namespace Felis.Samples.ReadXnb
             instance.Tag = value;
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new Model();
         }

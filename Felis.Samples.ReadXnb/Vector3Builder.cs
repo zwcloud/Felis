@@ -17,7 +17,7 @@ namespace Felis.Samples.ReadXnb
             instance.Z = z;
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new Vector3();
         }

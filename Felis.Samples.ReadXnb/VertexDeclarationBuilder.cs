@@ -47,7 +47,7 @@ namespace Felis.Samples.ReadXnb
             instance.Elements[currentElementIndex].UsageIndex = (int) value;
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new VertexDeclaration();
         }

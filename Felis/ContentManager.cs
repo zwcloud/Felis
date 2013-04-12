@@ -49,13 +49,13 @@ namespace Felis
             disposableObjects = new List<IDisposable>();
         }
 
-        public T Load<T>(string assetName, object deviceContext = null)
+        public T Load<T>(string assetName)
         {
             object asset;
             if (assetByName.TryGetValue(assetName, out asset))
                 return (T) asset;
 
-            asset = ReadAsset<T>(assetName, deviceContext, null);
+            asset = ReadAsset<T>(assetName, null);
 
             assetByName[assetName] = asset;
 
@@ -71,14 +71,14 @@ namespace Felis
             assetByName.Clear();
         }
 
-        protected T ReadAsset<T>(string assetName, object deviceContext, Action<IDisposable> recordDisposableObject)
+        protected T ReadAsset<T>(string assetName, Action<IDisposable> recordDisposableObject)
         {
             var filename = assetName + ".xnb";
             var filePath = Path.Combine(rootDirectory, filename);
 
             using (var stream = File.OpenRead(filePath))
             {
-                using (var reader = new ContentReader(stream, assetName, this, deviceContext, recordDisposableObject))
+                using (var reader = new ContentReader(stream, assetName, this, recordDisposableObject))
                 {
                     return (T) reader.ReadXnb();
                 }

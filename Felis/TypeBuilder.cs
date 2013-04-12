@@ -21,7 +21,7 @@ namespace Felis
             Initialized = true;
         }
 
-        protected internal abstract void Begin(object deviceContext);
+        protected internal abstract void Begin();
 
         protected internal abstract object End();
     }

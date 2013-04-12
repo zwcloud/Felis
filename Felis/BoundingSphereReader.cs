@@ -34,7 +34,7 @@ namespace Felis
 
         protected internal override object Read(ContentReader input)
         {
-            builder.Begin(input.DeviceContext);
+            builder.Begin();
 
             // Center
             builder.SetCenter(vector3Reader.Read(input));

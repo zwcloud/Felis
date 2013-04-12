@@ -34,7 +34,7 @@ namespace Felis.Samples.ReadXnb
             base.Initialize(contentManager);
         }
 
-        protected override void Begin(object deviceContext)
+        protected override void Begin()
         {
             instance = new IndexBuffer(graphicsDeviceService.GraphicsDevice);
         }
