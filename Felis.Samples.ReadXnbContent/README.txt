@@ -1,15 +1,21 @@
-Felis.Samples.ReadXnb.Program クラスは、XNA Shadow Mapping サンプルに含まれる
-"dude" アセットを読み込むように実装してあります。
-しかし、"dude" アセットは総ファイル サイズが大きいため、GitHub のリポジトリ
-管理から除外しています。このため、手動で XNA Shadow Mapping サンプルより
-"dude" アセットをコピーして配備する必要があります。
+Felis.Samples.ReadXnb.Program クラスは、XNA 公式サンプルに含まれるアセットを
+読み込みます。
 
-あるいは、"dude" アセットを必要としないならば、該当するアセットのロード処理を
-コメントアウトするなり、自分が必要とするアセットをコンテンツ プロジェクトへ
-登録して呼び出すように変更するなどしても良いでしょう。
+- XNA Shadow Mapping サンプル
 
-XNA Shadow Mapping サンプルから "dude" アセットをコピーする場合には、以下の
-ファイルを配備して下さい。
+    "dude" アセット
+
+- XNA Audio 3D サンプル
+
+    "DogSound" アセット
+
+上記アセットは総ファイル サイズが大きいため、GitHub のリポジトリ管理から
+除外しています。このため、必要なファイルを XNA 公式サンプルよりコピーして
+配備する必要があります。
+
+各アセットについて必要なファイルは以下の通りです。
+
+- XNA Shadow Mapping - "dude" アセット
 
     dude.fbx
     head.tga
@@ -26,10 +32,9 @@ XNA Shadow Mapping サンプルから "dude" アセットをコピーする場合には、以下の
     upbodyN.tga
     upbodyS.tga
 
-また、上記ファイルを配置した後、以下のファイルをコンテンツ プロジェクトへ
-手動で追加してください。
+- XNA Audio 3D - "DogSound" アセット
 
-    dude.fbx
+    DogSound.wav
 
 各ファイルに対するパイプライン設定は、XNA ShadowMapping サンプルの値を
 参考に設定して下さい。

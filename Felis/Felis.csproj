@@ -60,6 +60,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RectangleBuilderBase.cs" />
     <Compile Include="RectangleReader.cs" />
+    <Compile Include="SoundEffectBuilderBase.cs" />
+    <Compile Include="SoundEffectReader.cs" />
     <Compile Include="SpriteFontBuilderBase.cs" />
     <Compile Include="SpriteFontReader.cs" />
     <Compile Include="StringReader.cs" />

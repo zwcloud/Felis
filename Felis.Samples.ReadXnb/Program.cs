@@ -66,17 +66,22 @@ namespace Felis.Samples.ReadXnb
             contentManager.TypeReaderManager.RegisterTypeBuilder<ModelBuilder>();
             contentManager.TypeReaderManager.RegisterTypeBuilder<Texture2DBuilder>();
             contentManager.TypeReaderManager.RegisterTypeBuilder<SpriteFontBuilder>();
+            contentManager.TypeReaderManager.RegisterTypeBuilder<SoundEffectBuilder>();
 
             // .xnb を含むディレクトリを指定。
             contentManager.RootDirectory = "Content";
 
-            // XNA Shadow Mapping サンプルの "dude" アセット。
+            // XNA Shadow Mapping サンプル - "dude" アセット。
             var dudeModel = contentManager.Load<Model>("dude");
             Console.WriteLine("Model loaded.");
 
             // スプライト フォント。
             var spriteFont = contentManager.Load<SpriteFont>("SpriteFont");
             Console.WriteLine("SpriteFont loaded.");
+
+            // XNA Audio 3D サンプル - "DogSound" アセット。
+            var soudEffect = contentManager.Load<SoundEffect>("DogSound");
+            Console.WriteLine("SoundEffect loaded.");
 
             Console.WriteLine("Press enter key to exit...");
             Console.ReadLine();

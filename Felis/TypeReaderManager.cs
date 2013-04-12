@@ -77,6 +77,9 @@ namespace Felis
             RegisterTypeReader<SpriteFontReader>();
             RegisterTypeReader<ModelReader>();
 
+            // Media types
+            RegisterTypeReader<SoundEffectReader>();
+
             // 読み込み型が明確となるリーダに対するビルダを同時に登録。
             RegisterGenericTypeBuilder<ListBuilder>();
         }
