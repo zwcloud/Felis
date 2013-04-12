@@ -6,7 +6,7 @@ using System.IO;
 
 #endregion
 
-namespace Felis.Xnb
+namespace Felis
 {
     public class ContentManager : IDisposable
     {

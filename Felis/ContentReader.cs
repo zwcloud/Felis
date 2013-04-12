@@ -7,7 +7,7 @@ using System.Text;
 
 #endregion
 
-namespace Felis.Xnb
+namespace Felis
 {
     public class ContentReader : BinaryReader
     {

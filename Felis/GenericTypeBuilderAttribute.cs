@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace Felis.Xnb
+namespace Felis
 {
     [AttributeUsage(AttributeTargets.Class)]
     public sealed class GenericTypeBuilderAttribute : Attribute

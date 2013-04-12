@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace Felis.Xnb
+namespace Felis
 {
     [GenericTypeReader("System.Collections.Generic.List", "Microsoft.Xna.Framework.Content.ListReader")]
     public sealed class ListReader : GenericTypeReader

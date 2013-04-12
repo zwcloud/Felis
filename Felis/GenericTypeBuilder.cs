@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Felis.Xnb
+namespace Felis
 {
     public abstract class GenericTypeBuilder : TypeBuilder
     {

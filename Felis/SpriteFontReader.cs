@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace Felis.Xnb
+namespace Felis
 {
     public sealed class SpriteFontReader : TypeReader
     {

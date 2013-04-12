@@ -6,7 +6,7 @@ using System.Reflection;
 
 #endregion
 
-namespace Felis.Xnb
+namespace Felis
 {
     [GenericTypeBuilder("System.Collections.Generic.List", typeof(List<>))]
     public sealed class ListBuilder : GenericTypeBuilder
