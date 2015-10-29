@@ -75,13 +75,12 @@ namespace Felis.Samples.ReadXnb
             //var dudeModel = contentManager.Load<Model>("dude");
             //Console.WriteLine("Model loaded.");
 
-            // スプライト フォント。
-            var spriteFont = contentManager.Load<SpriteFont>("SpriteFont");
-            Console.WriteLine("SpriteFont loaded.");
-
-            // XNA Audio 3D サンプル - "DogSound" アセット。
-            var soudEffect = contentManager.Load<SoundEffect>("DogSound");
+            var texture2d = contentManager.Load<Texture2D>("checkermap");
+            Console.WriteLine("Texture2D loaded.");
+            var soudEffect = contentManager.Load<SoundEffect>("1");
             Console.WriteLine("SoundEffect loaded.");
+            var spriteFont = contentManager.Load<SpriteFont>("Arial");
+            Console.WriteLine("SpriteFont loaded.");
 
             Console.WriteLine("Press enter key to exit...");
             Console.ReadLine();
