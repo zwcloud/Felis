@@ -1,11 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Felis", "Felis\Felis.csproj", "{925D0821-89E3-4F7B-875C-7BE414022B27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Felis.Samples.ReadXnb", "Felis.Samples.ReadXnb\Felis.Samples.ReadXnb.csproj", "{72D9D4D9-445C-4816-9679-C6A8CA23B84C}"
-EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Felis.Samples.ReadXnbContent", "Felis.Samples.ReadXnbContent\Felis.Samples.ReadXnbContent.contentproj", "{79AC9772-99EA-404B-A057-A34AF86428BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,12 +37,6 @@ Global
 		{72D9D4D9-445C-4816-9679-C6A8CA23B84C}.Release|Mixed Platforms.Build.0 = Release|x86
 		{72D9D4D9-445C-4816-9679-C6A8CA23B84C}.Release|x86.ActiveCfg = Release|x86
 		{72D9D4D9-445C-4816-9679-C6A8CA23B84C}.Release|x86.Build.0 = Release|x86
-		{79AC9772-99EA-404B-A057-A34AF86428BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79AC9772-99EA-404B-A057-A34AF86428BF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{79AC9772-99EA-404B-A057-A34AF86428BF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{79AC9772-99EA-404B-A057-A34AF86428BF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{79AC9772-99EA-404B-A057-A34AF86428BF}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{79AC9772-99EA-404B-A057-A34AF86428BF}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
