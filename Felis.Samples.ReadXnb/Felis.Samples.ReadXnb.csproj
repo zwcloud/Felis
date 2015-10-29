@@ -82,22 +82,9 @@
       <Project>{925D0821-89E3-4F7B-875C-7BE414022B27}</Project>
       <Name>Felis</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Felis.Samples.ReadXnbContent\Felis.Samples.ReadXnbContent.contentproj">
-      <Name>Libra.Samples.ReadXnbContent %28Content%29</Name>
-      <XnaReferenceType>Content</XnaReferenceType>
-      <Project>{79AC9772-99EA-404B-A057-A34AF86428BF}</Project>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v4.0\Microsoft.Xna.GameStudio.Content.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

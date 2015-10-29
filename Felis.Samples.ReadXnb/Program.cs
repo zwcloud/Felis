@@ -72,8 +72,8 @@ namespace Felis.Samples.ReadXnb
             contentManager.RootDirectory = "Content";
 
             // XNA Shadow Mapping サンプル - "dude" アセット。
-            var dudeModel = contentManager.Load<Model>("dude");
-            Console.WriteLine("Model loaded.");
+            //var dudeModel = contentManager.Load<Model>("dude");
+            //Console.WriteLine("Model loaded.");
 
             // スプライト フォント。
             var spriteFont = contentManager.Load<SpriteFont>("SpriteFont");
